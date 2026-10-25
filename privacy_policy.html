@@ -1,0 +1,304 @@
+<title>Політика конфіденційності — SecondHand UA</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap">
+
+<style>
+  /* Layout: single-column document, centered, max 680px */
+  :root {
+    --bg: #F7F5F2;
+    --surface: #FFFFFF;
+    --fg: #1A1714;
+    --fg-muted: #6B6460;
+    --accent: #2D6A4F;
+    --accent-light: #E8F4EF;
+    --border: #E0DDD9;
+    --tag-bg: #EAF4EE;
+    --tag-fg: #1E5C3E;
+
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'IBM Plex Sans', sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #111310;
+      --surface: #1C1F1B;
+      --fg: #EAE8E4;
+      --fg-muted: #8A8784;
+      --accent: #52B788;
+      --accent-light: #1A2E23;
+      --border: #2E332C;
+      --tag-bg: #1A2E23;
+      --tag-fg: #74C69D;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #111310;
+    --surface: #1C1F1B;
+    --fg: #EAE8E4;
+    --fg-muted: #8A8784;
+    --accent: #52B788;
+    --accent-light: #1A2E23;
+    --border: #2E332C;
+    --tag-bg: #1A2E23;
+    --tag-fg: #74C69D;
+    color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 48px 80px;
+  }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .header {
+    margin-bottom: 48px;
+  }
+
+  .badge {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--tag-fg);
+    background: var(--tag-bg);
+    border: 1px solid var(--accent-light);
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 5vw, 32px);
+    font-weight: 600;
+    line-height: 1.2;
+    text-wrap: balance;
+    margin: 0 0 16px;
+    color: var(--fg);
+  }
+
+  .meta {
+    font-size: 14px;
+    color: var(--fg-muted);
+    margin: 0;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  /* Sections */
+  .section {
+    margin-bottom: 36px;
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+
+  p {
+    margin: 0 0 14px;
+    color: var(--fg);
+    max-width: 65ch;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0 0 14px;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    color: var(--fg);
+    max-width: 63ch;
+  }
+
+  /* Info card */
+  .info-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin: 20px 0;
+  }
+
+  .info-card p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--fg-muted);
+  }
+
+  /* Contact block */
+  .contact-block {
+    background: var(--accent-light);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-top: 8px;
+  }
+
+  .contact-block p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .contact-block a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+    word-break: break-all;
+  }
+
+  .contact-block a:hover {
+    text-decoration: underline;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--fg-muted);
+  }
+</style>
+
+<div class="container">
+  <header class="header">
+    <h1>Політика конфіденційності</h1>
+
+  </header>
+
+  <section class="section">
+    <h2>Загальна інформація</h2>
+    <p>База секондів України — мобільний додаток для пошуку секонд-хендів України. Ми серйозно ставимося до вашої приватності й намагаємося збирати мінімум даних, необхідних для роботи додатку.</p>
+    <p>Ця політика пояснює, яку інформацію ми збираємо, як її використовуємо та як захищаємо.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section">
+    <h2>Що ми збираємо</h2>
+
+    <p><strong>Аналітика Firebase (анонімна)</strong></p>
+    <p>Ми використовуємо Firebase Analytics від Google для розуміння того, як користувачі взаємодіють із додатком. Ці дані повністю анонімні і не дозволяють ідентифікувати вас особисто.</p>
+    <ul>
+      <li>Які екрани переглядаються та як довго</li>
+      <li>Які функції використовуються (пошук, карта, обране)</li>
+      <li>Географічний регіон (без точного місцеположення)</li>
+      <li>Тип пристрою та версія операційної системи</li>
+      <li>Кількість сесій та їх тривалість</li>
+    </ul>
+
+    <div class="info-card">
+      <p>Firebase Analytics не збирає ім'я, email, номер телефону або будь-яку іншу особисту інформацію. Дані надходять до Google LLC і обробляються відповідно до <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--accent);">Політики конфіденційності Google</a>.</p>
+    </div>
+
+    <p><strong>Push-сповіщення (Firebase Cloud Messaging)</strong></p>
+    <p>Якщо ви дозволяєте сповіщення, ми зберігаємо токен вашого пристрою для відправки нагадувань про оновлення магазинів. Цей токен не пов'язаний з вашою особою.</p>
+
+    <p><strong>Геолокація</strong></p>
+    <p>Додаток може запитувати доступ до вашого місцеположення для відображення найближчих магазинів на карті. Ми не зберігаємо та не передаємо ваші координати нікому.</p>
+
+    <p><strong>Обране</strong></p>
+    <p>Список обраних магазинів зберігається виключно на вашому пристрої (локально). Ми не маємо доступу до цих даних.</p>
+
+    <p><strong>Пропозиції користувачів</strong></p>
+    <p>Якщо ви надсилаєте пропозицію щодо нового магазину або зміни інформації, ми зберігаємо введені вами дані (назва, адреса, коментар) у Google Sheets. Особисті дані не є обов'язковими і не запитуються.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section">
+    <h2>Що ми НЕ збираємо</h2>
+    <ul>
+      <li>Ім'я, email або номер телефону</li>
+      <li>Паролі або платіжну інформацію</li>
+      <li>Точне місцеположення без вашого дозволу</li>
+      <li>Вміст буфера обміну або інших додатків</li>
+      <li>Будь-які біометричні дані</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section">
+    <h2>Сторонні сервіси</h2>
+    <p>Додаток використовує такі зовнішні сервіси, які мають власні політики конфіденційності:</p>
+    <ul>
+      <li><strong>Firebase Analytics</strong> — анонімна аналітика поведінки</li>
+      <li><strong>Firebase Cloud Messaging</strong> — push-сповіщення</li>
+      <li><strong>OpenStreetMap</strong> — картографічні тайли для відображення карти в додатку (дані © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" style="color: var(--accent);">OpenStreetMap</a> contributors)</li>
+      <li><strong>Google Maps</strong> — відкриття маршруту (за вашим запитом, у зовнішньому додатку)</li>
+      <li><strong>Google Sheets</strong> — зберігання пропозицій від користувачів</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section">
+    <h2>Дані про магазини</h2>
+    <p>База секонд-хендів формується з відкритих джерел та пропозицій від користувачів. Ми докладаємо зусиль для підтримки актуальності інформації, однак не гарантуємо її повну точність.</p>
+    <p>Якщо ви знайшли помилку або хочете оновити дані — скористайтеся кнопкою "Запропонувати зміни" в картці магазину.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section">
+    <h2>Ваші права</h2>
+    <p>Оскільки ми не збираємо персональних даних, більшість прав щодо доступу, видалення або редагування даних не застосовуються. Проте ви можете:</p>
+    <ul>
+      <li>Відмовитися від push-сповіщень у налаштуваннях пристрою</li>
+      <li>Заборонити доступ до геолокації у налаштуваннях пристрою</li>
+      <li>Вимкнути аналітику Firebase у налаштуваннях пристрою (через рекламний ідентифікатор)</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section">
+    <h2>Зміни в політиці</h2>
+    <p>Якщо ми суттєво змінимо цю політику, ми оновимо дату вгорі сторінки. Рекомендуємо час від часу переглядати цю сторінку.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section">
+    <h2>Зв'язок</h2>
+    <p>Маєте питання щодо приватності?</p>
+    <div class="contact-block">
+      <p>Напишіть нам: <a href="https://t.me/" target="_blank" rel="noopener">sviatoslav.parashchak@gmail.com</a></p>
+    </div>
+  </section>
+
+
+</div>
